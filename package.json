@@ -33,7 +33,7 @@
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.4.3",
-    "vite": "^5.4.0"
+    "vite": "^7.1.3"
   },
   "description": "Plan, organize, and track your events in true **New Orleans style** with a sleek **black & gold UI** and dynamic background effects.   This app is powered by **React + Local Storage**, making it lightweight and fast while keeping your data safe locally on your device.",
   "main": "eslint.config.js",
