@@ -1,31 +1,43 @@
 {
   "name": "task-manager",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "homepage": "https://aviselanj.github.io/task-manager",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "server": "node server.js"
   },
   "dependencies": {
-    "framer-motion": "^12.23.12",
-    "lucide-react": "^0.539.0",
+    "better-sqlite3": "^12.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.436.0",
+    "mongoose": "^8.17.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.9.1"
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "@eslint/js": "^9.33.0",
-    "@types/react": "^19.1.10",
-    "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react-swc": "^4.0.0",
-    "eslint": "^9.33.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "vite": "^7.1.2"
-  }
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.4.0"
+  },
+  "description": "Plan, organize, and track your events in true **New Orleans style** with a sleek **black & gold UI** and dynamic background effects.   This app is powered by **React + Local Storage**, making it lightweight and fast while keeping your data safe locally on your device.",
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
